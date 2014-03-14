@@ -6,7 +6,7 @@ require "weixin_rails_middleware/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "weixin_rails_middleware"
-  s.version     = WeixinRailsMiddleware::VERSION
+  s.version     = WeixinRailsMiddleware::VERSION.dup
   s.authors     = ["lanrion"]
   s.email       = ["huaitao-deng@foxmail.com"]
   s.homepage    = "http://github.com/lanrion/weixin_rails_middleware"
