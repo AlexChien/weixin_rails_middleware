@@ -6,8 +6,8 @@ module WeixinRailsMiddleware
 
       before_create do
         # TODO: refactor
-        self.weixin_secret_key = generate_weixin_secret_key
-        self.weixin_token      = WeiXinUniqueToken.generate
+        self.weixin_secret_key ||= generate_weixin_secret_key
+        self.weixin_token      ||= WeiXinUniqueToken.generate
       end
     end
 
