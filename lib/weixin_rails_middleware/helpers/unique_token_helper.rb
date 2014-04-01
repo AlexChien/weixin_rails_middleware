@@ -6,7 +6,7 @@ module WeixinRailsMiddleware
       generator_method      = SecureRandom.method(generator_method_type)
       token_size            = options.delete(:size).try(:to_i) || 12
       if generator_method_type != :uuid
-        generator_method.call(token_size)
+        generator_method.call(token_size).tr("+/_\\-=",'jkvwxy')
       else
         generator_method.call()
       end
