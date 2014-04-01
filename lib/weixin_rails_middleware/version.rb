@@ -1,3 +1,3 @@
 module WeixinRailsMiddleware
-  VERSION = "1.0.4".freeze
+  VERSION = "1.2.0"
 end
